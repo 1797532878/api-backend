@@ -1,12 +1,12 @@
 spring:
   application:
-    name: springboot-init
+    name: api_backend
   # DataSource Config
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/my_db
+    url: jdbc:mysql://localhost:3306/api_db
     username: root
-    password: 123456
+    password: c123456
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
