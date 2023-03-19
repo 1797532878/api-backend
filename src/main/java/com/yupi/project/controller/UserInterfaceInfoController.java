@@ -13,14 +13,15 @@ import com.yupi.project.exception.BusinessException;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoAddRequest;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoQueryRequest;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoUpdateRequest;
-import com.yupi.project.model.entity.User;
-import com.yupi.project.model.entity.UserInterfaceInfo;
 import com.yupi.project.service.UserInterfaceInfoService;
 import com.yupi.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import model.entity.User;
+import model.entity.UserInterfaceInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
+import service.InnerUserInterfaceInfoService;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;

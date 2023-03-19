@@ -34,5 +34,15 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 capi:
   clcient:
-    access-key: 陈
+    access-key: chenx # 仅供测试 登录时应该动态获取
     secret-key: asdasdasd
+
+
+dubbo:
+  application:
+    name: dubbo-springboot-demo-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://${zookeeper.address:192.168.19.128}:2181

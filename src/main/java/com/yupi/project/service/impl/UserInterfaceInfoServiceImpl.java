@@ -4,15 +4,14 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yupi.project.common.ErrorCode;
 import com.yupi.project.exception.BusinessException;
-import com.yupi.project.model.entity.UserInterfaceInfo;
-import com.yupi.project.service.UserInterfaceInfoService;
 import com.yupi.project.mapper.UserInterfaceInfoMapper;
+import com.yupi.project.service.UserInterfaceInfoService;
+import model.entity.UserInterfaceInfo;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -22,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 */
 @Service
 public class UserInterfaceInfoServiceImpl extends ServiceImpl<UserInterfaceInfoMapper, UserInterfaceInfo>
-    implements UserInterfaceInfoService{
+    implements UserInterfaceInfoService {
 
     @Autowired
     private RedissonClient redissonClient;
